@@ -162,8 +162,7 @@ var date = "";
             document.getElementById("materia").value = tr.childNodes[0].innerHTML;
             document.getElementById("numero").value = tr.childNodes[1].innerHTML;
 
-            
-            document.getElementById("fecha").value = tr.childNodes[2].innerHTML
+            document.getElementById("fecha").value = tr.childNodes[2].innerHTML;
             document.getElementById("id").value = tr.childNodes[4].innerHTML;
             
             if (tr.childNodes[3].innerHTML=="Noche")
