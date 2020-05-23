@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <title> Primer parcial Laboratorio III</title>
+        <link rel="stylesheet" href="css/estilos.css"/> 
+        <script type = "text/javascript" src="js/funciones.js" >
+        </script>
+    </head>
+    <body>
+        
+        <div class = "container-fluid" id= "contBtn" >
+            <h1 id = "h1">Lista de materias</h1>
+            
+        </div>
+        <table id="tabla">
+            <tr>
+                <th>Materia</th>
+                <th>Cuatrimestre</th>
+                <th>Fecha</th>
+                <th>Turno</th>
+                <th style="display:none">ID</th>
+            </tr>
+        </table>
+        <div class = "container-fluid" id= "contenedorAgregar" hidden=true>
+            <div id = "divCerrar">
+                <input type="button" value = "x" id = "cerrar" name="cerrar">
+                <br>
+                </div>
+            <div id = "divUser">
+                Materia:
+                <input type="text" id = "materia" name="nombre">
+                <br>
+            </div>
+            <div id = "divCuatrimestre">
+                Cuatrimestre:
+                <select name="select" id ="numero" disabled>
+                    <option value="1">1</option> 
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                <br>
+            </div>
+            <div id = "divFecha">
+                Fecha:
+                <input type="date" id = "fecha" name="fecha">
+            <br>
+            </div>
+            <div id = "divTurno">
+                Turno:
+                <input type="radio" value= "Noche" id = "noche" name="turno">
+                <label for="female">Noche</label>
+                <input type="radio" value = "Mañana" id = "mañana" name="turno">
+                <label for="male">Mañana</label>
+                <br>
+            </div>
+            <div id = "divId">
+                <input type="text" id = "id" name="id" readonly="readonly" hidden=true >
+                <br>
+            </div>
+            <div id = "divbotones">
+                <input type="button" value = "Eliminar" id = "btnEliminar" name="btnEliminar">
+                <input type="button" value = "Modificar" id = "btnModificar" name="btnModificar">
+            </div>
+        </div>
+        <div class="loader" id="loader"hidden=true>
+            <input type = "image" src="img/spinner.gif">
+        </div>
+    </body>
+</html>
